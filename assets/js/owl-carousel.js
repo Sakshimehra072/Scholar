@@ -1,20 +1,4 @@
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-/**
- * Owl carousel
- * @version 2.3.4
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- * @todo Lazy Load Icon
- * @todo prevent animationend bubling
- * @todo itemsScaleUp
- * @todo Test Zepto
- * @todo stagePadding calculate wrong active classes
- */
+
 ;(function($, window, document, undefined) {
 
 	/**
@@ -591,10 +575,7 @@
 		this.trigger('changed', { property: { name: 'settings', value: this.settings } });
 	};
 
-	/**
-	 * Updates option logic if necessery.
-	 * @protected
-	 */
+
 	Owl.prototype.optionsLogic = function() {
 		if (this.settings.autoWidth) {
 			this.settings.stagePadding = false;
@@ -602,12 +583,6 @@
 		}
 	};
 
-	/**
-	 * Prepares an item before add.
-	 * @todo Rename event parameter `content` to `item`.
-	 * @protected
-	 * @returns {jQuery|HTMLElement} - The item container.
-	 */
 	Owl.prototype.prepare = function(item) {
 		var event = this.trigger('prepare', { content: item });
 
@@ -621,10 +596,6 @@
 		return event.data;
 	};
 
-	/**
-	 * Updates the view.
-	 * @public
-	 */
 	Owl.prototype.update = function() {
 		var i = 0,
 			n = this._pipe.length,
@@ -643,12 +614,6 @@
 		!this.is('valid') && this.enter('valid');
 	};
 
-	/**
-	 * Gets the width of the view.
-	 * @public
-	 * @param {Owl.Width} [dimension=Owl.Width.Default] - The dimension to return.
-	 * @returns {Number} - The width of the view in pixel.
-	 */
 	Owl.prototype.width = function(dimension) {
 		dimension = dimension || Owl.Width.Default;
 		switch (dimension) {
@@ -682,19 +647,12 @@
 		this.trigger('refreshed');
 	};
 
-	/**
-	 * Checks window `resize` event.
-	 * @protected
-	 */
+
 	Owl.prototype.onThrottledResize = function() {
 		window.clearTimeout(this.resizeTimer);
 		this.resizeTimer = window.setTimeout(this._handlers.onResize, this.settings.responsiveRefreshRate);
 	};
 
-	/**
-	 * Checks window `resize` event.
-	 * @protected
-	 */
 	Owl.prototype.onResize = function() {
 		if (!this._items.length) {
 			return false;
@@ -723,12 +681,6 @@
 		this.trigger('resized');
 	};
 
-	/**
-	 * Registers event handlers.
-	 * @todo Check `msPointerEnabled`
-	 * @todo #261
-	 * @protected
-	 */
 	Owl.prototype.registerEventHandlers = function() {
 		if ($.support.transition) {
 			this.$stage.on($.support.transition.end + '.owl.core', $.proxy(this.onTransitionEnd, this));
@@ -750,13 +702,6 @@
 		}
 	};
 
-	/**
-	 * Handles `touchstart` and `mousedown` events.
-	 * @todo Horizontal swipe threshold as option
-	 * @todo #261
-	 * @protected
-	 * @param {Event} event - The event arguments.
-	 */
 	Owl.prototype.onDragStart = function(event) {
 		var stage = null;
 
