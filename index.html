@@ -9,28 +9,19 @@
 
     <title>Scholar - Online School HTML5 Template</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
+    <link rel="stylesheet" href="assets/css/style.css">
 
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
--->
   </head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -41,9 +32,7 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -53,34 +42,33 @@ https://templatemo.com/tm-586-scholar
                     <a href="index.html" class="logo">
                         <h1>Scholar</h1>
                     </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Serach Start ***** -->
+                
                     <div class="search-input">
                       <form id="search" action="#">
                         <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                         <i class="fa fa-search"></i>
                       </form>
                     </div>
-                    <!-- ***** Serach Start ***** -->
-                    <!-- ***** Menu Start ***** -->
+                  
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="courses.html">Courses</a></li>
                       <li class="scroll-to-section"><a href="#team">Team</a></li>
                       <li class="scroll-to-section"><a href="#events">Events</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+                      <!-- <li class="scroll-to-section"><a href="#contact">Register Now!</a></li> -->
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="signup.html">Signup</a></li>
+                      <li id="profile-icon" style="display: none;"></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
                 </nav>
             </div>
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
   <div class="main-banner" id="top">
     <div class="container">
@@ -89,9 +77,11 @@ https://templatemo.com/tm-586-scholar
           <div class="owl-carousel owl-banner">
             <div class="item item-1">
               <div class="header-text">
-                <span class="category">Our Courses</span>
+                <!-- <span class="category">Our Courses</span> -->
+                <a class="category" href="courses.html">Our Courses</a>
+
                 <h2>With Scholar Teachers, Everything Is Easier</h2>
-                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
+                <p>Scholar is an innovative online learning platform that offers a wide range of interactive courses designed to enhance knowledge and skills. It provides flexible, accessible education for learners of all ages, empowering them to achieve their academic and professional goals.</p>
                 <div class="buttons">
                   <div class="main-button">
                     <!-- <a href="#">Request Demo</a> -->
@@ -99,7 +89,7 @@ https://templatemo.com/tm-586-scholar
 
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
+                    <!-- <a href="#"><i class="fa fa-play"></i> What's Scholar?</a> -->
                   </div>
                 </div>
               </div>
@@ -156,85 +146,56 @@ https://templatemo.com/tm-586-scholar
         <div class="ratio ratio-16x9">
           <iframe id="demoVideo" src="https://www.youtube.com/embed/-qfEOE4vtxE?enablejsapi=1" 
         title="Bootstrap 5 Crash Course" allowfullscreen></iframe>
-          <!-- <iframe id="demoVideo" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"  -->
-                  <!-- title="Demo Video" allowfullscreen></iframe> -->
+      >
+          <!-- <iframe id="demoVideo" src="https://www.youtube.com/watch?v=ezbJwaLmOeM" 
+        title="Bootstrap 5 Crash Course" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-  <!-- <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
-            </div>
-            <div class="main-content">
-              <h4>Online Degrees</h4>
-              <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Short Courses</h4>
-              <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Web Experts</h4>
-              <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-  <!-- Services Section -->
 <div class="services section" id="services">
   <div class="container">
     <div class="row">
 
-      <!-- Online Degrees -->
-      <div class="col-lg-4 col-md-6">
-        <div class="service-item">
-          <div class="icon">
-            <img src="assets/images/service-01.png" alt="online degrees">
-          </div>
-          <div class="main-content">
-            <h4>Online Degrees</h4>
-            <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
-            <div class="main-button">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#onlineDegreesModal">Read More</a>
-            </div>
-          </div>
-        </div>
+<div class="col-lg-4 col-md-6">
+  <div class="service-item">
+    <div class="icon">
+      <img src="assets/images/service-01.png" alt="online degrees">
+    </div>
+    <div class="main-content">
+      <h4>Online Degrees</h4>
+      <p>They offer flexibility and accessibility, allowing students to study from anywhere in the world at their own pace. With a wide range of programs—from diplomas to master's degrees—online education has become a convenient alternative to traditional on-campus learning.</p>
+      <div class="main-button">
+        <!-- "Read More" button to open modal -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#onlineDegreesModal">Read More</a>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Online Degrees -->
+<div class="modal fade" id="onlineDegreesModal" tabindex="-1" aria-labelledby="onlineDegreesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="onlineDegreesLabel">Online Degrees</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Online classes have revolutionized the world of education, offering flexibility and convenience for students worldwide. With advancements in technology, students no longer need to be bound by geographical locations or rigid schedules to earn a degree. Whether you're pursuing a diploma, bachelor's, or master's degree, online education allows you to learn at your own pace from accredited institutions.
+        </p>
+        <p>
+          These online programs cover a wide range of fields including business, technology, health, and the arts, offering students the chance to gain relevant skills without having to attend a physical campus. The flexibility to study from anywhere and manage personal commitments while learning is one of the biggest advantages of online classes. Many online programs offer the same quality of education as traditional classroom learning, with instructors available for consultations, peer-to-peer interaction, and access to comprehensive learning materials through digital platforms.
+        </p>
+        <p>
+          As online learning continues to grow, it provides opportunities for individuals who may have previously been unable to pursue higher education due to time, cost, or location constraints. Whether you're a working professional looking to upskill, a parent balancing home responsibilities, or someone seeking career advancement, online degrees offer an accessible and valuable pathway to achieving your academic and professional goals.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- Short Courses -->
       <div class="col-lg-4 col-md-6">
@@ -244,7 +205,7 @@ https://templatemo.com/tm-586-scholar
           </div>
           <div class="main-content">
             <h4>Short Courses</h4>
-            <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
+            <p>Short courses are perfect for individuals looking to gain specific skills that can be applied immediately in their work or personal projects. They are especially useful for professionals who need to stay current in their field, students seeking to explore new interests, or anyone looking to make a career change or upskill quickly..</p>
             <div class="main-button">
               <a href="#" data-bs-toggle="modal" data-bs-target="#shortCoursesModal">Read More</a>
             </div>
@@ -260,7 +221,7 @@ https://templatemo.com/tm-586-scholar
           </div>
           <div class="main-content">
             <h4>Web Experts</h4>
-            <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
+            <p>A Web Experts Modal is a pop-up window or dialog box used in web development to provide users with additional information, functionality, or options without navigating away from the current page. It's often used to display details, forms, or interactive content that enhances the user experience without overwhelming the main page.</p>
             <div class="main-button">
               <a href="#" data-bs-toggle="modal" data-bs-target="#webExpertsModal">Read More</a>
             </div>
@@ -292,7 +253,7 @@ https://templatemo.com/tm-586-scholar
 </div>
 
 <!-- Short Courses Modal -->
-<div class="modal fade" id="shortCoursesModal" tabindex="-1" aria-labelledby="shortCoursesLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="shortCoursesModal" tabindex="-1" aria-labelledby="shortCoursesLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -308,7 +269,53 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
+</div> -->
+
+<!-- Modal for Short Courses -->
+<div class="modal fade" id="shortCoursesModal" tabindex="-1" aria-labelledby="shortCoursesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shortCoursesLabel">Short Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopModalVideo('shortCoursesVideo')"></button>
+      </div>
+      <div class="modal-body">
+        <p>Gain quick, targeted skills with short online courses in various fields like marketing, technology, business, and more. These courses are designed to provide practical knowledge in a short period of time, making them perfect for professionals looking to enhance their expertise or individuals looking to change career paths.</p>
+        
+        <!-- Detailed Information -->
+        <h6>Why Choose Short Courses?</h6>
+        <p>Short courses are an excellent way to learn new skills or improve existing ones in a fraction of the time it would take to complete a full degree program. These programs typically range from a few hours to several weeks, depending on the topic, making them perfect for those with busy schedules or a desire for quick learning. Whether you're interested in mastering digital marketing, improving your coding skills, or gaining knowledge in emerging fields like artificial intelligence, short courses offer flexibility and affordability.</p>
+        
+        <h6>Benefits of Short Courses</h6>
+        <ul>
+          <li><strong>Quick Learning:</strong> Complete courses in a short time, often in a matter of weeks, depending on the intensity of the program.</li>
+          <li><strong>Flexibility:</strong> Study at your own pace, from anywhere in the world, making it ideal for professionals and those with busy schedules.</li>
+          <li><strong>Affordability:</strong> Short courses are often more affordable than full degree programs, making education accessible to a wider audience.</li>
+          <li><strong>Practical Skills:</strong> Learn skills that can be applied immediately in your job or personal projects.</li>
+          <li><strong>Career Advancement:</strong> Enhance your resume and increase your chances of career progression with specialized knowledge in specific fields.</li>
+        </ul>
+
+        <h6>Popular Fields for Short Courses</h6>
+        <ul>
+          <li><strong>Technology:</strong> Programming, Data Science, Cybersecurity, Cloud Computing, AI, and more.</li>
+          <li><strong>Business:</strong> Leadership, Marketing, Financial Management, Entrepreneurship, Project Management, etc.</li>
+          <li><strong>Creative Arts:</strong> Graphic Design, Photography, Animation, Video Production, and more.</li>
+          <li><strong>Health and Wellness:</strong> Nutrition, Mental Health, Fitness, and related fields.</li>
+          <li><strong>Personal Development:</strong> Time Management, Public Speaking, Negotiation Skills, and more.</li>
+        </ul>
+
+        <h6>Who Should Take Short Courses?</h6>
+        <p>Short courses are ideal for anyone looking to upskill or reskill quickly. Whether you're a professional looking to stay competitive in your field, a student seeking to explore new interests, or someone who wants to switch careers, short courses provide a valuable way to boost your knowledge and skills in a particular area. They are also perfect for employers who want to provide targeted learning opportunities for their teams.</p>
+
+        <div class="ratio ratio-16x9">
+          <iframe id="shortCoursesVideo" src="https://www.youtube.com/embed/1hHMwLxN6EM?enablejsapi=1"
+                  title="Short Courses Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <!-- Web Experts Modal -->
 <div class="modal fade" id="webExpertsModal" tabindex="-1" aria-labelledby="webExpertsLabel" aria-hidden="true">
@@ -319,7 +326,7 @@ https://templatemo.com/tm-586-scholar
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopModalVideo('webExpertsVideo')"></button>
       </div>
       <div class="modal-body">
-        <p>Learn from professional web developers and enhance your skills in HTML, CSS, JavaScript, and more.</p>
+        <p>A Web Experts Modal is a pop-up window or dialog box used in web development to provide users with additional information, functionality, or options without navigating away from the current page. It's often used to display details, forms, or interactive content that enhances the user experience without overwhelming the main page.</p>
         <div class="ratio ratio-16x9">
           <iframe id="webExpertsVideo" src="https://www.youtube.com/embed/zJSY8tbf_ys?enablejsapi=1"
                   title="Web Development Course" allowfullscreen></iframe>
@@ -833,6 +840,37 @@ https://templatemo.com/tm-586-scholar
     const iframe = document.getElementById(videoId);
     iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
   }
+   // Simulate a logged-in user (can be set dynamically after login)
+   const username = "Sakshi";
+
+// Get the first letter for icon
+const initial = username.charAt(0).toUpperCase();
+
+// Show profile icon in navbar
+const profileLi = document.getElementById("profile-icon");
+profileLi.innerHTML = `
+  <div class="profile-initial" id="profileToggle">${initial}</div>
+  <div class="profile-dropdown" id="profileDropdown">
+    <strong>${username}</strong>
+    <hr>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+`;
+profileLi.style.display = "block";
+
+// Toggle dropdown on click
+document.addEventListener("click", function (e) {
+  const toggle = document.getElementById("profileToggle");
+  const dropdown = document.getElementById("profileDropdown");
+
+  if (toggle.contains(e.target)) {
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  } else if (!dropdown.contains(e.target)) {
+    dropdown.style.display = "none";
+  }
+});
   </script>
 
 </html>
